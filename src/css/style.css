@@ -168,4 +168,75 @@ html {
 .wrapper {
   width: 100%;
   height: 100%;
-  display: flex; }
+  display: flex;
+  flex-direction: column; }
+
+header {
+  width: 100%;
+  height: 1.17333rem;
+  background: #000;
+  color: #fff;
+  display: flex;
+  justify-content: space-between; }
+  header div {
+    display: flex;
+    align-items: center; }
+
+section {
+  flex: 1;
+  display: flex;
+  flex-direction: column; }
+  section .section-shop-name {
+    width: 100%;
+    height: 2.66667rem;
+    padding: 0.13333rem 0.53333rem;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between; }
+    section .section-shop-name img {
+      width: 1.6rem;
+      height: 1.6rem; }
+    section .section-shop-name div:nth-child(3) {
+      width: 2.66667rem; }
+  section .swiper-container {
+    width: 100%;
+    height: 4.53333rem; }
+    section .swiper-container .swiper-wrapper {
+      width: 100%;
+      height: 100%; }
+      section .swiper-container .swiper-wrapper .swiper-slide {
+        width: 100%;
+        height: 100%; }
+        section .swiper-container .swiper-wrapper .swiper-slide img {
+          width: 100%;
+          height: 100%; }
+  section .section-shop-list {
+    width: 100%;
+    height: 1.17333rem;
+    display: flex;
+    justify-content: space-around;
+    box-sizing: border-box;
+    border-bottom: 1px solid #ccc; }
+    section .section-shop-list div {
+      display: flex;
+      align-items: center;
+      height: 100%;
+      box-sizing: border-box;
+      padding: 0 0.4rem; }
+      section .section-shop-list div.active {
+        color: #f2922f;
+        border-bottom: 0.05333rem solid #f2922f; }
+
+footer {
+  width: 100%;
+  height: 1.33333rem;
+  display: flex;
+  justify-content: space-around; }
+  footer div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    footer div img {
+      width: 0.8rem;
+      height: 0.8rem; }

@@ -1,6 +1,111 @@
 @import "common.scss";
-.wrapper{
-    width:100%;
+
+.wrapper {
+    width: 100%;
     height: 100%;
     display: flex;
+    flex-direction: column;
+}
+
+header {
+    width: 100%;
+    height: pxTorem(44px);
+    background: #000;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+
+    div {
+        display: flex;
+        align-items: center;
+    }
+}
+
+section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+
+    .section-shop-name {
+        width: 100%;
+        height: pxTorem(100px);
+        padding: pxTorem(5px) pxTorem(20px);
+        box-sizing: border-box;
+        display: flex;
+        justify-content: space-between;
+
+        img {
+            width: pxTorem(60px);
+            height: pxTorem(60px);
+        }
+
+        div:nth-child(3) {
+            width: pxTorem(100px);
+        }
+    }
+
+    .swiper-container {
+        width: 100%;
+        height: pxTorem(170px);
+
+        .swiper-wrapper {
+            width: 100%;
+            height: 100%;
+
+            .swiper-slide {
+                width: 100%;
+                height: 100%;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+
+    .section-shop-list {
+        width: 100%;
+        height: pxTorem(44px);
+        display: flex;
+        justify-content: space-around;
+        box-sizing: border-box;
+        border-bottom: 1px solid #ccc;
+
+        div {
+            display: flex;
+            align-items: center;
+            height: 100%;
+            box-sizing: border-box;
+            padding: 0 pxTorem(15px);
+
+            &.active {
+                color: #f2922f;
+                border-bottom: pxTorem(2px) solid #f2922f;
+            }
+        }
+    }
+
+    .section-shop-introduce {
+
+    }
+}
+
+footer {
+    width: 100%;
+    height: pxTorem(50px);
+    display: flex;
+    justify-content: space-around;
+
+    div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            width: pxTorem(30px);
+            height: pxTorem(30px);
+        }
+    }
 }
